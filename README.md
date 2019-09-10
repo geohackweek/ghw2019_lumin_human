@@ -1,27 +1,25 @@
-# Sample Project
+## Lumin Human
 
-This is as an example on how teams can structure their project repositories.
+## Scientific question / value
+Use night time lights satellite data to predict rasterized socio-economic indicators with a focus on Sub-Saharan Africa region
 
-## Files
+### Data understanding
 
-* `.gitignore`
-<br> Globally ignored files by `git` for the project.
-* `environment.yml`
-<br> `conda` environment description needed to run this project.
-* `README.md`
-<br> Description of the project. [Sample](https://geohackweek.github.io/wiki/github_project_management.html#project-guidelines)
+The data source for features is sourced from the Defense Meteorological Satellite Program - Operational Linescan System (DMSP -OLS) and the Day/Night Band (DNB) of the Visible Infrared Imaging Radiometer Suite (VIIRS) of NASA/NOAA's Suomi National Polar-orbiting Partnership satellite, which was launched in October 2011. This dataset is described at https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/viirs-nrt. This sensor is specifically designed for capturing radiance from the Earth at night.
 
-## Folders
+There are both monthly composite images and, more recently, daily images. See https://earthdata.nasa.gov/learn/articles/viirs-dnb
 
-### `contributors`
-Each team member has it's own folder under contributors, where he/she can
-work on their contribution. Having a dedicated folder for one-self helps to 
-prevent conflicts when merging with master.
 
-### `notebooks`
-Notebooks that are considered delivered results for the project should go in
-here.
+### Data processing
 
-### `scripts`
-Helper utilities that are shared with the team
 
+
+### Modeling
+
+
+
+### Evaluation
+
+
+
+### Deployment
