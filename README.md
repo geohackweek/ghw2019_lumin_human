@@ -1,6 +1,6 @@
 ## Lumin Human
 
-## Scientific question / value
+### Scientific question / value
 Use night time lights satellite data to predict rasterized socio-economic indicators with a focus on Sub-Saharan Africa region
 
 ### Data understanding
