@@ -12,6 +12,7 @@ There are both monthly composite images and, more recently, daily images. See ht
 
 ### Data processing
 
+Extracting night-time lights satellite imagery (DMSP and VIIRS) from Google Earth Engine. The script can be found at the following link: https://code.earthengine.google.com/a4343a0c38c2cf49ea2240cd3ffb6971. Replace with your own local drive pathways and file names.
 
 
 ### Modeling
