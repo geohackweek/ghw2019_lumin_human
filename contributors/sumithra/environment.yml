@@ -1,0 +1,17 @@
+name: sumithra-test
+channels:
+- conda-forge
+dependencies:
+- python=3.6
+- numpy
+- matplotlib
+- pandas
+- bokeh
+- rise
+- nb_conda_kernels
+- ipykernel
+- geopandas
+- shapely
+- descartes
+- requests
+- geojson
