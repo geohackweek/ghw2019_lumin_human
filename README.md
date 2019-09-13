@@ -32,6 +32,8 @@ https://nbviewer.jupyter.org/github/geohackweek/ghw2019_lumin_human/blob/master/
 ### Modeling
 We envision modeling tasks that proceed from the more simple baseline comparison models to the more elaborate three-stage modeling worfklow (object detection - CNN - ridge regression) with enriched and expanded data that is developed in the above paper. 
 
+[Result](https://github.com/geohackweek/ghw2019_lumin_human/blob/master/contributors/Yohan/geohack.pdf)
+
 ### Evaluation
 We envision the evaluation metric to be rooot mean squared error (RMSE), as used in the above paper. 
     
