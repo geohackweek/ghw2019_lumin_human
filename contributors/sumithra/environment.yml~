@@ -15,4 +15,3 @@ dependencies:
 - descartes
 - requests
 - geojson
-- rasterio
