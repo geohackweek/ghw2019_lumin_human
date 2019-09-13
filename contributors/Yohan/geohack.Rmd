@@ -1,0 +1,117 @@
+---
+title: "Geohack - Prediction Model Using Night Light Image"
+author: "Yohan Min"
+date: "9/13/2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+library(RefManageR)
+library(xaringan)
+library(pander)
+load("geo.RData")
+source("analysis.r")
+```
+
+class: normal
+
+## Household Survey in Tanzania
+
+* Households who participated in Tanzania are mapped. 
+
+```{r echo=FALSE}
+plot(data[,5:6], cex=0.5, col='red')
+plot(wrld_simpl, add=TRUE)
+```
+
+
+---
+
+class: normal
+
+## Random Forest Modeling 
+
+* After getting predictors from `worldclim`, the model was ran to predict the sampling instance in the region. There are 19 variables, for example `bio2` is Mean Diurnal Range (Mean of monthly (max temp - min temp)) and `bio` is Precipitation of Wettest Quarter. 
+
+```{r echo=FALSE, fig.height= 4, fig.width= 7}
+varImpPlot(rrf)
+
+```
+
+---
+class: normal
+
+## GWR Model 
+
+* Geographically weighted regression (GWR) 
+
+GWR model entails consideration of spatial dependence in a local level by changing the coefficient values of covariates without involvement of explicit spatial term to the model.
+
+
+.medium[`\begin{aligned}
+Y(s) = \beta_{0}+\beta_{1}(s)X_1(s)+\beta_{2}(s)X_2(s)+\epsilon(s)
+\end{aligned}`]
+
+---
+class: normal
+
+## ROC 
+
+* The model seems to be fine.  
+
+```{r echo=FALSE}
+plot(eva, 'ROC')
+```
+
+
+
+---
+class: normal
+
+## Model Prediction in Tanzania
+
+* The result of the model is mapped in terms of probability. Red points represent households surveyed. 
+
+```{r echo=FALSE}
+plot(rwhole)
+plot(wrld_simpl, add=TRUE)
+points(data[, 5:6], cex=.25, col="red")
+
+```
+
+---
+class: normal
+
+## Model Prediction in Kenya
+
+* Using the model, houshold survey prediction was made for Kenya. 
+
+```{r echo=FALSE}
+plot(pk)
+plot(wrld_simpl, add=TRUE)
+
+```
+
+
+---
+class: normal
+
+## Expenditure Model in terms of Night light and Distance in Tanzania
+
+* The result of the model is mapped. This shows that those households living far from the populated center and market, and less night light region, are likely to spend less expenditure. Averaged night light remote sensing data from `Google earth engine` and `World bank` health data were used to predict the expenditure in the region. 
+
+```{r echo=FALSE, fig.height= 4, fig.width= 7}
+plot(s)
+```
+
+
+<!--pagedown::chrome_print("C:/Users/Yohan_Min/DIRECT/eviction/model/geohack.html")-->
+
