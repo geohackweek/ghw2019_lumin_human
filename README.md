@@ -23,8 +23,9 @@ Both NTL data sources (DMSP and VIIRS) are extracted from Google Earth Engine. T
 Daytime satellite image data will subsequently be acquired for use in conjunction with the NTL data.
 
 # Data processing
-We aggregate the household-level consumption expenditure values to the community level.
+We aggregate the household-level consumption expenditure values to the community level and plot these values on the NTL image. 
 
+Results:  https://nbviewer.jupyter.org/github/geohackweek/ghw2019_lumin_human/blob/master/notebooks/read_and_plot_survey_data_lumin_human.ipynb
 
 ### Modeling
 We envision modeling tasks that proceed from the more simple baseline comparison models to the more elaborate three-stage modeling worfklow (object detection - CNN - ridge regression) with enriched and expanded data that is developed in the above paper. 
