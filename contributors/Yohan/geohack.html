@@ -43,20 +43,6 @@ class: normal
 ---
 class: normal
 
-## GWR Model 
-
-* Geographically weighted regression (GWR) 
-
-GWR model entails consideration of spatial dependence in a local level by changing the coefficient values of covariates without involvement of explicit spatial term to the model.
-
-
-.medium[`\begin{aligned}
-Y(s) = \beta_{0}+\beta_{1}(s)X_1(s)+\beta_{2}(s)X_2(s)+\epsilon(s)
-\end{aligned}`]
-
----
-class: normal
-
 ## ROC 
 
 * The model seems to be fine.  
@@ -83,13 +69,29 @@ class: normal
 
 ![](geohack_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 
+---
+class: normal
+
+## GWR Model 
+
+* Geographically weighted regression (GWR) 
+
+GWR model entails consideration of spatial dependence in a local level by changing the coefficient values of covariates without involvement of explicit spatial term to the model.
+
+Averaged night light remote sensing data from `Google earth engine` and `World bank` health data were used to predict the expenditure in the region.
+
+
+.medium[`\begin{aligned}
+Y(s) = \beta_{0}+\beta_{1}(s)X_1(s)+\beta_{2}(s)X_2(s)+\epsilon(s)
+\end{aligned}`]
+
 
 ---
 class: normal
 
 ## Expenditure Model in terms of Night light and Distance in Tanzania
 
-* The result of the model is mapped. This shows that those households living far from the populated center and market, and less night light region, are likely to spend less expenditure. Averaged night light remote sensing data from `Google earth engine` and `World bank` health data were used to predict the expenditure in the region. 
+* The result of the model is mapped. This shows that those households living far from the populated center and market, and less night light region, are likely to spend less expenditure. 
 
 ![](geohack_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
 
