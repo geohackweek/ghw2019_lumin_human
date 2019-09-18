@@ -1,5 +1,7 @@
 ## Lumin Human
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 ### Context
 Night-time lights (NTL) data from earth observation satellites is an alternative data source for research on socio-economic indicators in cases when national or large-N survey data is unavailable, uncertain, or cost-prohbitive. Unsettled questions, new satellites, and novel machine learning techniques make this a fruitful area for continuing research on a range of questions with significant social, economic and socio-environmental implications. 
 
